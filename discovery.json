@@ -1,0 +1,110 @@
+{
+  "question": "How do I create or edit Obsidian Flavored Markdown correctly?",
+  "trigger": [
+    "User wants to create a new Obsidian note",
+    "User asks about wikilinks, embeds, or callouts",
+    "User mentions Obsidian-specific syntax",
+    "User wants to convert Markdown to Obsidian format"
+  ],
+  "decision": [
+    "Create a new note with correct Obsidian syntax",
+    "Edit an existing note to add Obsidian features",
+    "Provide correct syntax examples for Obsidian"
+  ],
+  "evidence": [
+    "User's request for note creation or editing",
+    "Existing Markdown content to be converted",
+    "Questions about specific Obsidian syntax"
+  ],
+  "success_measure": "The created or edited Markdown is valid Obsidian Flavored Markdown and renders correctly in Obsidian.",
+  "outcome": "Valid Obsidian Flavored Markdown content or syntax guidance",
+  "intended_users": [
+    "Obsidian users",
+    "Note-takers",
+    "Knowledge managers"
+  ],
+  "input_types": [
+    "Text description",
+    "Existing Markdown content",
+    "Syntax questions"
+  ],
+  "output_artifacts": [
+    "Obsidian Flavored Markdown content",
+    "Syntax examples"
+  ],
+  "use_cases": [
+    "Daily note creation",
+    "Project documentation",
+    "Knowledge base maintenance"
+  ],
+  "examples": [
+    {
+      "invocation": "/obsidian-markdown-skill Create a daily note with a task list and a callout",
+      "description": "Create a new daily note with specific formatting"
+    },
+    {
+      "invocation": "/obsidian-markdown-skill How do I link to a specific block in another note?",
+      "description": "Get syntax help for block links"
+    }
+  ],
+  "permissions_systems": [
+    "Read local files",
+    "Write local files"
+  ],
+  "typical_completion_time": "1-2 minutes",
+  "compatibility": {
+    "declared": [
+      "opencode",
+      "cursor",
+      "windsurf"
+    ],
+    "certified": []
+  },
+  "environment": {
+    "documentation_sources": [
+      "Obsidian Help documentation"
+    ],
+    "data_sources": [
+      "User-provided text or Markdown"
+    ],
+    "required_capabilities": [
+      "Read and write Markdown files"
+    ],
+    "readiness_checks": [
+      "User provides clear intent for note creation or editing"
+    ]
+  },
+  "risk": {
+    "tier": "low",
+    "permissions": [
+      "Read and write local Markdown files"
+    ],
+    "mutation_boundary": "read-only",
+    "approval_required": []
+  },
+  "software_mutation": {
+    "applies": false
+  },
+  "data_interfaces": {
+    "applies": false
+  },
+  "semantic_recon": {
+    "applies": false
+  },
+  "semantic_contract": {
+    "applies": false
+  },
+  "routing_tests": {
+    "should_trigger": [
+      "Create a new Obsidian note",
+      "How do I use wikilinks?",
+      "Add a callout to my note"
+    ],
+    "should_not_trigger": [
+      "Create a Excel spreadsheet",
+      "Write a Python script",
+      "Send an email"
+    ]
+  },
+  "support_tier": "supported"
+}
